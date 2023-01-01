@@ -1,0 +1,163 @@
+.footer{
+    .content{
+            margin: 1rem;
+            margin-bottom: 3rem;
+            // margin-top: -30rem;
+            margin-left: 8%;
+;
+        .title{
+            font-weight: bold;
+            font-size: 3rem;
+            .grade {
+                font-weight: bold;
+                background: -webkit-linear-gradient(
+                  -45deg,
+                  #ee582a,
+                  #b01b54,
+                  #264deb,
+                  #23d5ab
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+              
+              
+              .wave {
+                animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+                animation-duration: 2.5s; /* Change to speed up or slow down */
+                animation-iteration-count: infinite; /* Never stop waving :) */
+                transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+                display: inline-block;
+              }
+              @keyframes wave-animation {
+                0% {
+                  transform: rotate(0deg);
+                }
+                10% {
+                  transform: rotate(14deg);
+                } /* The following five values can be played with to make the waving more or less extreme */
+                20% {
+                  transform: rotate(-8deg);
+                }
+                30% {
+                  transform: rotate(14deg);
+                }
+                40% {
+                  transform: rotate(-4deg);
+                }
+                50% {
+                  transform: rotate(10deg);
+                }
+                60% {
+                  transform: rotate(0deg);
+                } /* Reset for the last half to pause */
+                100% {
+                  transform: rotate(0deg);
+                }
+              }   
+        }
+        .links{
+          .link-content{
+            font-weight: bold;
+            margin: 2rem 0rem;
+            font-size: 1.5rem;
+          }
+          .content-socials{
+            a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 2rem;
+            font-size: 2rem;
+            margin-top: 2rem;
+          }
+        }
+        }
+    }
+
+.footer-links{
+
+    width:auto;
+    .abhiLogo{
+        height: 70px;
+    }
+    text-decoration: none;
+    .tagline{
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin: 1rem;
+      float: right;
+    }
+    .socials{
+        // float: right;
+        text-align: center;
+        margin-top: -4rem;
+        :hover{
+            transform: scale(1.09);
+        }
+    }
+}
+}
+@media (max-width:959px) {
+  .footer{
+    .content{
+            margin: 1rem;
+            margin-bottom: 3rem;
+            // margin-top: -30rem;
+            
+        .title{
+            font-weight: bold;
+            font-size: 1.8rem;   
+        }
+        .links{
+          .link-content{
+            font-weight: bold;
+            margin: 2rem 0rem;
+            font-size: 1rem;
+          }
+          .content-socials{
+            a{
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            padding: 1rem;
+            font-size: 1rem;
+            margin-top: 2rem;
+          }
+        }
+        }
+    }
+
+.footer-links{
+
+    
+    .abhiLogo{
+        height: 50px;
+        //text-align: center;
+        margin-left: 6rem;
+        margin-right: auto;
+    }
+    text-decoration: none;
+    .tagline{
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      margin: 1rem;
+    
+    }
+    .socials{
+        // float: right;
+        text-align: center;
+        display: none;
+        //margin-top: -4rem;
+
+    }
+    .tagline{
+      text-align: center;
+      display: block;
+
+    }
+}
+}
+}
