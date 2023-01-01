@@ -34,14 +34,14 @@ export default function Home() {
         <Image
           src={Bulb}
           alt="bulb"
-          className="bg-green"
+          className="bg-black p-1 rounded"
           onClick={() => setTheme("light")}
         />
       ) : (
         <Image
           src={moon}
           alt="moon"
-          className="bg-pink"
+          className="bg-goldenyellow p-1 rounded"
           onClick={() => setTheme("dark")}
         />
       )}
