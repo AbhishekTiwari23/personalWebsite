@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import {sendContactForm} from './contact.api.js'
-// import { mailOptions, transporter, Transporter } from './nodemailer.js';
-// import { useFirebase } from 'next-connect-firebase'
 function ContactForm() {
   
   // variables 

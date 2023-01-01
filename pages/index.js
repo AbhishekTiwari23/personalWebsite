@@ -1,8 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 import Hero from '../components/hero/hero.js';
 import Skills from '../components/skills/skills';
 import Education from '../components/education/education';
@@ -11,7 +8,6 @@ import Footer from '../components/footer/footer';
 import Projects from '../components/myprojects/myproject';
 import Achievements from '../components/achievements/achievements';
 import AboutMe from './abouMe/aboutme';
-import ParticlesComponent from '../components/Point';
 import GotoTop from '../components/gototop/gototop.js'
 
 export default function Home() {
@@ -36,7 +32,7 @@ export default function Home() {
      
      <GotoTop/>
      <Footer/>
-     {/* <ParticlesComponent/> */}
+
       </main>
     </>
   )

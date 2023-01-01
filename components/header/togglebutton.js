@@ -15,18 +15,18 @@ export default function Home() {
   }
   const [colorTheme, setTheme] = useDarkMode(initialTheme);
   // Use the useEffect hook to update the localStorage value when the colorTheme state variable changes
-  // useEffect(() => {
-  //   try {
-  //     if (typeof window !== 'undefined') {
-  //         const colorScheme = window.matchMedia('(preference-color-scheme:dark').matches ?'dark' : 'light';
-  //         const storagetheme = window.localStorage.getItem('theme');
-  //         setTheme(storagetheme || colorScheme)
-  //     }
-  //   } catch (error) {
-  //     // handle the error
-  //     alert(error)
-  //   }
-  // }, [colorTheme]);
+  useEffect(() => {
+    try {
+      if (typeof window !== 'undefined') {
+          const colorScheme = window.matchMedia('(preference-color-scheme:dark').matches ?'dark' : 'light';
+          const storagetheme = window.localStorage.getItem('theme');
+          setTheme(storagetheme || colorScheme)
+      }
+    } catch (error) {
+      // handle the error
+      alert(error)
+    }
+  }, [colorTheme]);
 
   return (
     <div className=" inline-block cursor-pointer ">
