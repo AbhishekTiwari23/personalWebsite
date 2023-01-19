@@ -169,8 +169,8 @@ const openCard = () => {
      }
   return (
     <>
-    <div className="card w-1/2 mx-auto mt-10 p-8 ">
-    <div className="stats mx-auto my-4 px-1 py-8 bg-goldenyellow text-black rounded-4xl"> 
+    <div className="card w-1/2 mx-auto mt-10 p-9 ">
+    <div className="stats mx-auto my-4 px-1 py-9 bg-goldenyellow text-black rounded-4xl"> 
     <div className="stats-wrap inline-block ">
       <ul >
         <li className="m-4 text-justify">⭐ Total Stars : <div className="count inline ml-1.5"> {stars}</div></li>
@@ -182,7 +182,7 @@ const openCard = () => {
       </ul>
       </div>
       <div className="git-ani inline float-right m-1 -mt-8">
-        <Image src={Github} alt="github stats" className="bg-black p-0 grade rounded-full"/>
+        <Image src={Github} alt="github stats" className="bg-black  grade rounded-4xl "/>
       </div>
       </div> 
     </div>

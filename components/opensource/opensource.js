@@ -10,7 +10,7 @@ const OpenSource = () => {
 
       <div className="contribution">
       {/* <p className="open-para">Look at some of my contributions</p> */}
-        <OpenCard name="Layer5" logo={Layer5} />
+        <OpenCard />
       </div>
       </div>
       <style jsx>
