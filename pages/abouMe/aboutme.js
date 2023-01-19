@@ -13,8 +13,6 @@ const AboutMe = () => {
 
       <Image className="myimage mx-auto  my-32 border-2  rounded-4xl h-52 w-52 " src={MyPhoto} alt="my photo" />
 
-      {/* <div className="text-style">
-            </div> */}
       <div className="content-wrap">
         
         <div className="content">

@@ -6,9 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image';
 const ProjectCard = (props)=>{
     return(
-        <div className="projectCard-wrapper" >
+        <div className="projectCard-wrapper lg:w-3/4 w-11/12 border-solid border-black border rounded-4xl text-black  bg-goldenyellow" >
 
-            <div className="projectCard-middle" >
+            <div className="projectCard-middle text-center" >
                 <Image src={props.pic} alt="" className='project-pic rounded-t-2xl' />
             </div>
             <div className="projectCard-right">
@@ -23,27 +23,6 @@ const ProjectCard = (props)=>{
             </div>
             <style jsx>
                 {`
-                .projectCard-wrapper{
-                    border: 0.01rem solid black;
-                            width: 70%;
-                            border-radius: 20px;
-                            color: black;
-                            margin-left: auto;
-                            margin-right: auto;
-                            border: 0.01rem solid black;
-                            border-radius: 1rem;
-                            flex-wrap: wrap;
-                            
-                            background-color: #fcfcfc;
-                }
-                .projectCard-middle{
-                    text-align: center;
-                }
-                .project-pic{
-                    width: 100%;
-                    height:auto;
-                    border-radius: 1rem 1rem 0rem 0rem;
-                }
                 .projectCard-middle:hover .back{
                     display: inline;
                 }

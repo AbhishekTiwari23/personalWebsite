@@ -13,7 +13,6 @@ const Footerall = () => {
         <div className="footer-links block p-2">
        <div className="foot-img inline-block"> <Link href="/">
           <Image src={AbhishekLogo} alt="name" className="abhiLogo" height="70"/>
-          {/* <div className = "footername">{Abhishek.myname.firstName} <span>{Abhishek.myname.lastName}</span></div> */}
         </Link></div>
         <div className="tagline inline-block float-right">Made with <big>❤️</big> by {Abhishek.myname.firstName } {Abhishek.myname.lastName}</div>
       <div className="s ml-96 -mt-20">

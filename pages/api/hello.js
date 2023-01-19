@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import nodemailer from 'nodemailer'
 export default function handler(req, res) {
-  // alert(req.body)
   transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",

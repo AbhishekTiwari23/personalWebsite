@@ -20,11 +20,8 @@ const Abhishek = {
         myTwitter: "https://twitter.com/ABHISHEKTI23",
         myDev: "https://dev.to/abhishektiwari23",
         myLinkee: "",
+        
     },
-
-    myMemoji: "",
-    myFaceMemoji: "",
-    myPhoto: "",
     college: {
         myBtechCollegeFullName: "Netaji Subhash University of Techology",
         myBtechCollegeShortName: "NSUT",

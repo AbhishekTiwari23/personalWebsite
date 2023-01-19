@@ -80,26 +80,6 @@ const handleContent=(event)=>{
       }
       
     }
-      // Reset state variables to their initial value
-     
-  
-  
-  // const router = useRouter()
-  // const { firebase } = useFirebase()
-
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault()
-
-  //   const formData = new FormData(event.target)
-  //   const data = Object.fromEntries(formData)
-
-  //   try {
-  //     await firebase.database().ref('contact-form').push(data)
-  //     router.push('/success')
-  //   } catch (error) {
-  //     console.error(error)
-  //   }
-  // }
 console.log(first);
 console.log(last);
 console.log(email);
