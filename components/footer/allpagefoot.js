@@ -10,13 +10,13 @@ const Footerall = () => {
     return (
         <>
         <hr/>
-        <div className="footer-links block p-2">
+        <div className="footer-links block lg:p-2 p-1">
        <div className="foot-img inline-block"> <Link href="/">
-          <Image src={AbhishekLogo} alt="name" className="abhiLogo" height="70"/>
+          <Image src={AbhishekLogo} alt="name" className="abhiLogo w-11 lg:w-auto" height="70"/>
         </Link></div>
-        <div className="tagline inline-block float-right">Made with <big>❤️</big> by {Abhishek.myname.firstName } {Abhishek.myname.lastName}</div>
+        <div className="tagline inline-block float-right text-xs lg:text-base">Made with <big>❤️</big> by {Abhishek.myname.firstName } {Abhishek.myname.lastName}</div>
       <div className="s ml-96 -mt-20">
-        <ul className="socials inline-block">
+        <ul className="socials hidden lg:inline-block">
          <li className="foot-link inline-block"> <Link href={Abhishek.socials.myGithub} target= "_blank">
             <Image src={Github} alt="Github" />
           </Link></li>

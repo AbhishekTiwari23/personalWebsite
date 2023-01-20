@@ -8,11 +8,11 @@ const ProjectCard = (props)=>{
     return(
         <div className="projectCard-wrapper lg:w-3/4 w-11/12 border-solid border-black border rounded-4xl text-black  bg-goldenyellow" >
 
-            <div className="projectCard-middle text-center" >
+            <div className="projectCard-middle text-center inline" >
                 <Image src={props.pic} alt="" className='project-pic rounded-t-2xl' />
             </div>
             <div className="projectCard-right">
-                <Link href="/" className="name">{props.name}</Link>
+                <Link href="/" className="name font-bold ">{props.name}</Link>
                 <div className="card-socials">
                     <Link href="/">
                         <Image src={Github} alt="Github Link" className="github inline-block" />
@@ -23,25 +23,7 @@ const ProjectCard = (props)=>{
             </div>
             <style jsx>
                 {`
-                .projectCard-middle:hover .back{
-                    display: inline;
-                }
-                .projectCard-middle:hover.front{
-                    display: none;
-                    z-index: 99;
-                }
-                .projectCard-right{
-                    //margin: 2rem;
-                    //bottom: 0%;
-                    padding-top: 1rem;
-                }
-                .name{
-                    // display: block;
-                     font-weight: bold;
-                     text-decoration: none;
-                     color: black;
-                     font-size: 2rem;
-                 }
+
                  .site-link{
                      margin-top: -3rem;
                      text-decoration: none;

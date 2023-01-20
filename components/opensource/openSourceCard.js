@@ -169,24 +169,24 @@ const openCard = () => {
      }
   return (
     <>
-    <div className="card w-1/2 mx-auto mt-10 p-9 ">
-    <div className="stats mx-auto my-4 px-1 py-9 bg-goldenyellow text-black rounded-4xl"> 
+    <div className="card lg:w-1/2  mx-auto lg:mt-10 lg:p-9 ">
+    <div className="stats mx-auto my-4 px-1 py-9 bg-white dark:bg-goldenyellow text-black rounded-4xl border border-solid border-black"> 
     <div className="stats-wrap inline-block ">
       <ul >
-        <li className="m-4 text-justify">⭐ Total Stars : <div className="count inline ml-1.5"> {stars}</div></li>
-        <li className="m-4 text-justify">🔄 Total Commits : <div className="count inline ml-1">{commits}</div></li>
-        <li className="m-4 text-justify">🔄 Total Repos : <div className="count inline ml-1">{repos}</div></li>
-        <li className="m-4 text-justify">🛠️ Total Pull Request : <div className="count inline ml-1">{pullRequests}</div></li>
-        <li className="m-4 text-justify">🚫 Total Contributions : <div className="count inline ml-1">{issues}</div></li>
-        <li className="m-4 text-justify">🎒 Flollowers : <div className="count inline ml-1">{followers}</div></li>
+        <li className="lg:m-4 m-2 text-justify">⭐ Total Stars : <div className="count inline ml-1.5"> {stars}</div></li>
+        <li className="lg:m-4 m-2 text-justify">🔄 Total Commits : <div className="count inline ml-1">{commits}</div></li>
+        <li className="lg:m-4 m-2 text-justify">🔄 Total Repos : <div className="count inline ml-1">{repos}</div></li>
+        <li className="lg:m-4 m-2 text-justify">🛠️ Total Pull Request : <div className="count inline ml-1">{pullRequests}</div></li>
+        <li className="lg:m-4 m-2 text-justify">🚫 Total Contributions : <div className="count inline ml-1">{issues}</div></li>
+        <li className="lg:m-4 m-2 text-justify">🎒 Flollowers : <div className="count inline ml-1">{followers}</div></li>
       </ul>
       </div>
       <div className="git-ani inline float-right m-1 -mt-8">
-        <Image src={Github} alt="github stats" className="bg-black  grade rounded-4xl "/>
+        <Image src={Github} alt="github stats" className="bg-black  grade rounded-4xl hidden lg:inline"/>
       </div>
       </div> 
     </div>
-    <div className="orgs-title w-1/2 mx-auto  p-8 ">Organisations I am a part of
+    <div className="orgs-title lg:w-1/2 mx-auto  lg:p-8 ">Organisations I am a part of
     <div className="orgs">
       {orgs?(
         orgs.map(org =>(

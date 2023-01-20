@@ -6,15 +6,15 @@ import Link from 'next/link'
 const EducationCard = (props) => {
     return (
         <div className="college">
-            <div className="college-wrapper w-9/12 mx-auto mt-10 p-8 bg-goldenyellow text-black rounded-4xl text-center">
+            <div className="college-wrapper lg:w-9/12 mx-auto mt-10 p-8 dark:bg-goldenyellow text-black bg-white rounded-4xl text-center border border-solid border-black ">
 
              <div className="college-pic inline-block my-4">  <Link href={props.alink} target="_blank"> <Image src={NsutLogo} alt="College-name"  height="150" /></Link></div>
                 <div className="content">
-                    <div className="college_name font-bold text-2xl text-center my-4 mx-auto">{Abhishek.college.myBtechCollegeFullName}</div>
+                    <div className="college_name font-bold lg:text-2xl text-lg text-center my-4 mx-auto">{Abhishek.college.myBtechCollegeFullName}</div>
 
-                    <div className="degree_name font-bold text-2xl text-center my-4 mx-auto">{Abhishek.college.myBtechCollegeDegreemajorsfull}</div>
+                    <div className="degree_name font-bold lg:text-2xl text-lg text-center my-4 mx-auto">{Abhishek.college.myBtechCollegeDegreemajorsfull}</div>
                 
-                    <div className="specialisation font-bold text-2xl text-center my-4 mx-auto">{Abhishek.college.myBtechCollegeDegreeSpecialisation}</div>
+                    <div className="specialisation font-bold lg:text-2xl text-lg text-center my-4 mx-auto">{Abhishek.college.myBtechCollegeDegreeSpecialisation}</div>
                     <div className="college_timeline font-light text-center text-sm ">{Abhishek.college.myBtechTimeLine.start} - {Abhishek.college.myBtechTimeLine.end}</div>
                     <div className="discription">
                         <ul>

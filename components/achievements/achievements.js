@@ -7,10 +7,10 @@ import Card from './achievementCard';
 const Achievements = () =>{
     return (
         <>
-        <div className="achievements w-1/2 mt-4 mb-24 mx-auto text-2xl p-4  ">
-            <div className="content mb-24">
-            <div className='title font-bold text-4xl mt-24'><span className='grade'>Success is not a piece of cake </span> 🍰</div>
-            <div className='para text-2xl'>Have a look at some of my achievements 🥇</div>
+        <div className="achievements lg:w-1/2 lg:mt-4 lg:mb-24 mx-auto text-2xl p-4  ">
+            <div className="content lg:mb-24">
+            <div className='title font-bold lg:text-4xl mt-24'><span className='grade'>Success is not a piece of cake </span> 🍰</div>
+            <div className='para text-sm lg:text-2xl'>Have a look at some of my achievements 🥇</div>
             </div>
             <div className="cards">
             <Card name = "Hack Squad" logoUrl = {HackSquad} para = "Win the competetion with my team submited 100PR and got a rank of 12"  siteLink = "https://dev.to/novu/hacksquad-2022-contribute-meet-participate-and-win-swag-3b18" />

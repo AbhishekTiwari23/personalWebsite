@@ -3,8 +3,8 @@ import EducationCard from './educationCard.js';
 const Education = () =>{
     return(
         <>
-        <div className="education w-2/5 mx-auto my-32 ">
-            <div className='title font-bold text-center text-6xl'><span className='grade'>I am a Learner </span>📚</div>
+        <div className="education lg:w-2/5 w-11/12 mx-auto lg:my-32 my-20 ">
+            <div className='title font-bold text-center lg:text-6xl text-4xl '><span className='grade'>I am a Learner </span>📚</div>
             <EducationCard alink= "http://www.nsit.ac.in/"/>
 
         </div>

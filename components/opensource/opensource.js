@@ -5,11 +5,11 @@ import OpenCard from "./openSourceCard";
 const OpenSource = () => {
   return (
     <>
-    <div className="open-source  p-4  mx-auto my-32">
-        <div className="open-title text-6xl font-bold text-center"><span className='grade' >I love to contribute</span></div>
+    <div className="open-source  p-4  mx-auto lg:my-32">
+        <div className="open-title lg:text-6xl text-3xl font-bold text-center"><span className='grade' >I love to contribute</span></div>
 
       <div className="contribution">
-      {/* <p className="open-para">Look at some of my contributions</p> */}
+
         <OpenCard />
       </div>
       </div>

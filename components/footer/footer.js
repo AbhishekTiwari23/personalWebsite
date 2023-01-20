@@ -6,25 +6,25 @@ const Footer = () => {
   return (
 
     <div className="footer block">
-      <div className="content">
-        <div className="title">
+      <div className="content lg:m-4 m-1 lg:mb-12 lg:ml-20">
+        <div className="title font-bold lg:text-5xl text-2xl">
           <span className="grade">Dont be a stranger! </span>
           <span className="wave">👋</span>
         </div>
         <div className="links">
-          <div className="link-content">Connet with me on socials 🥂</div>
-          <ul className="content-socials">
-           <li className="social-link"> <Link href={Abhishek.socials.myGithub} target= "_blank" className="social-link">
+          <div className="link-content lg:text-2xl font-bold lg:mt-8">Connet with me on socials 🥂</div>
+          <ul className="content-socials m-2 lg:m-4">
+           <li className="social-link lg:m-4 inline-block m-2"> <Link href={Abhishek.socials.myGithub} target= "_blank" className="social-link lg:text-4xl text-base">
               🐙GH 
             </Link></li>
-            <li className="social-link">  <Link href={Abhishek.socials.myLinkedin} target= "_blank" className="social-link">
+            <li className="social-link lg:m-4 inline-block m-2 ">  <Link href={Abhishek.socials.myLinkedin} target= "_blank" className="social-link lg:text-4xl text-base">
               🐦TW
             </Link></li>
-            <li className="social-link"> <Link href={Abhishek.socials.myTwitter} target= "_blank" className="social-link">
+            <li className="social-link lg:m-4 inline-block m-2 "> <Link href={Abhishek.socials.myTwitter} target= "_blank" className="social-link lg:text-4xl text-base">
               📸IN
 
             </Link></li>
-            <li className="social-link"><Link href='/contactme'>
+            <li className="social-link text-base lg:m-4 inline-block lg:text-4xl m-2"><Link href='/contactme' classname="text-base">
             📬IL
             </Link></li>
           </ul>
@@ -34,16 +34,6 @@ const Footer = () => {
      
       <style jsx>
         {`
-        .content{
-          margin: 1rem;
-          margin-bottom: 3rem;
-          // margin-top: -30rem;
-          margin-left: 8%;
-        }
-        .title{
-          font-weight: bold;
-          font-size: 3rem;
-        }
         .grade {
           font-weight: bold;
           background: -webkit-linear-gradient(
@@ -89,47 +79,8 @@ const Footer = () => {
             transform: rotate(0deg);
           }
         }
-        .link-content{
-          font-weight: bold;
-          margin: 2rem 0rem;
-          font-size: 1.5rem;
-        }
-        .content-socials{
-          text-decoration: none;
-          // color: aliceblue;
-          font-weight: bold;
-          padding: 2rem;
-          font-size: 2rem;
-          margin-top: 2rem;
-          word-spacing: in-between;
-        }
-        .social-link{
-          margin:1rem;
-          padding:1px;
-          display: inline-block;
-        }
-        .abhiLogo{
-          margin:1rem;
-          borger-radius:32px;
-        }
-        .tagline{
-          display: inline-block;
-          text-align: center;
-          font-weight: bold;
-          margin: 1rem;
-          float: right;
-        }
-        .socials{
-            // float: right;
-            text-align: center;
-            margin-top: -4rem;
-        }
-        .foot-link{
-          display:inline-block;
-        }
-        foot-link:hover{
-          transform: scale(1.09);
-      }    
+
+
         `}
       </style>
     </div>
