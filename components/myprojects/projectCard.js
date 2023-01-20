@@ -6,10 +6,10 @@ import Link from 'next/link'
 import Image from 'next/image';
 const ProjectCard = (props)=>{
     return(
-        <div className="projectCard-wrapper lg:w-3/4 w-11/12 border-solid border-black border rounded-4xl text-black  bg-goldenyellow" >
+        <div className="projectCard-wrapper lg:w-3/4  border-solid border-black border rounded-4xl text-black  bg-goldenyellow text-center" >
 
             <div className="projectCard-middle text-center inline" >
-                <Image src={props.pic} alt="" className='project-pic rounded-t-2xl' />
+                <Image src={props.pic} alt="" className='project-pic rounded-t-4xl' />
             </div>
             <div className="projectCard-right">
                 <Link href="/" className="name font-bold ">{props.name}</Link>

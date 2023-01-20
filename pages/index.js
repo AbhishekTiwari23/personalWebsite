@@ -9,7 +9,7 @@ import Projects from '../components/myprojects/myproject';
 import Achievements from '../components/achievements/achievements';
 import AboutMe from './abouMe/aboutme';
 import GotoTop from '../components/gototop/gototop.js'
-
+import Headerbox from '../components/header/headerbox.js'
 export default function Home() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        
+        {/* <Headerbox/> */}
         <Hero/> 
       <AboutMe/>
      <Skills/>

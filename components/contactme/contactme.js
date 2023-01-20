@@ -86,7 +86,7 @@ console.log(email);
 console.log(mailsubject);
 console.log(content);
   return (
-    <div className='border border-solod border-myblue py-8  w-2/6 rounded-4xl text-center text-white my-12 mx-auto'>
+    <div className='border border-solod border-myblue py-8  lg:w-2/6 rounded-4xl text-center text-white lg:my-12 my-6 mx-auto'>
     <form  className=" form-wrap" >
       <input type="text" name="first-name " required className=' my-4 active:border-myblue active:border-4 active:border-solid focus:outline-none required:border-red-500 rounded p-2 text-black w-1/3 mx-1 inline'placeholder='First Name *' value={first} onChange={handleFirst} />
       <input type="text" name="last-name" required className='focus:outline-none inline my-4  rounded p-2 text-black w-1/3 'placeholder='Last Name *' value={last} onChange={handleLast}/>

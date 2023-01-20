@@ -5,6 +5,7 @@ import AbhishekLogo from "../../assets/mypic/abhisheklogo.png";
 import Gear from "../../assets/socials/moon.svg";
 import Image from "next/image";
 import Link from "next/link";
+import HeaderBox from './headerbox.js'
 const Header = () => {
   const theme = useDarkMode();
   return (
@@ -35,11 +36,8 @@ const Header = () => {
       </div>
       <div
           className="hamburger-open lg:hidden inline"
-          onClick={() => {
-            setshow(true);
-          }}
         >
-          <Image src={Gear} alt="hamburger" height="25" className="inline float-right"/>
+          <Image src={Gear} alt="hamburger" height="25" className="inline float-right" onClick={HeaderBox}/>
         </div>
       </div>
       

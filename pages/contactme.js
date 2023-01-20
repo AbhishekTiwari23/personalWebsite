@@ -4,11 +4,11 @@ const Contactme = () =>{
     return(
         <>
         <div className='contact-wrap '>
-            <div className="grade  mx-auto text-center my-32 text-8xl">Keep In Touch </div>
+            <div className="grade  mx-auto text-center my-8 lg:my-32 text-4xl lg:text-8xl">Keep In Touch </div>
         <div className="wrap flex">
-        <div className="discription inline w-1/3 p-8 m-8">
+        <div className="discription lg:inline hidden w-1/3 p-8 m-8">
             
-           <div className="text-4xl"> Hi <span className='wave '>👋</span>, {" <Geek/> "}</div> <br/>Feel free to talk to me about anything that bothers you. If you need a helping hand, please don't hesitate to contact me. Got a question on the services that I provide? I am just a click away.
+           <div className="text-4xl "> Hi <span className='wave '>👋</span>, {" <Geek/> "}</div> <br/>Feel free to talk to me about anything that bothers you. If you need a helping hand, please don't hesitate to contact me. Got a question on the services that I provide? I am just a click away.
 
 I live in the England's time zone, if this help
             </div>
@@ -16,7 +16,7 @@ I live in the England's time zone, if this help
         
         
         </div>
-        <div className='notice-para'>Field Required <span className="notice">*</span></div>
+        <div className='notice-para font-extralight lg:font-medium text-xs '>Field Required <span className="notice">*</span></div>
         </div>
         <style jsx>
             {`
