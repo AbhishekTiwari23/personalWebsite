@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 const Hero = () =>{
     return(
-        <div className="hero lg:m-1 m-0 lg:mt-28 mt-16 lg:p-1  px-0 pb-1  ">
+        <div className="hero lg:m-1 m-0 lg:mt-28 mt-16 lg:p-1  px-0 pb-1 font-serif ">
             
             <div className = "greeting-text block "> <span className="text-left  font-bold text-2xl lg:text-4xl"> Hi <span className='grade '>{" < Geek / > "}</span><span className='wave'> 👋</span></span><br/> <div className='mt-4 lg:ml-4 lg:text-5xl text-2xl inline-block text-left'> I am Abhishek <span className='grade'>Tiwari</span></div></div>
-            <div className='greeting-text-para  block text-center lg:text-9xl text-5xl leading-relaxed '>turning <span className='grade'>Ideas</span><br/> into <span className='grade'>Reality</span> <br/>is my <span className='grade'>Passion</span></div>
+            <div className='greeting-text-para  block text-center lg:text-9xl font-bold text-5xl '>turning <span className='grade '>Ideas</span><br/> into <span className='grade'>Reality</span> <br/>is my <span className='grade'>Passion</span></div>
             <style jsx>
                 {
                     ` 
@@ -34,7 +34,6 @@ const Hero = () =>{
                       }
                       
                       .grade{
-                        font-weight: bold;
 
                         background: linear-gradient(-90deg,  #F85032, #E73827);
                        -webkit-background-clip: text;

@@ -37,18 +37,18 @@ if(loading){
         articlesList.map(article => (
             <Link href={article.url} target= "_blank">
           <div key={article.id}>
-            <div className="container w-2/3 mx-auto cursor-pointer my-4 border border-solid border-black rounded-2xl dark:bg-goldenyellow bg-black dark:text-black text-white " name= {article.id} >
+            <div className=" lg:w-2/3 mx-auto cursor-pointer my-4 border border-solid border-black rounded-2xl dark:bg-goldenyellow bg-black dark:text-black text-white " name= {article.id} >
             <img src={article.social_image} alt={article.title} className="article-img rounded-tl-2xl rounded-tr-2xl "/>
-            <div className='artic-date font-light m-2 text-xs '>{article.published_at.substring(0,10)}</div>
-            <div className='artic-date font-light m-2 text-xs'>{"Reading Time : " + article.reading_time_minutes}</div>
-            <div className='artic-date font-light m-2 text-xs'>{article.tag_list.map(
+            <div className='font-light m-2 text-xs '>{article.published_at.substring(0,10)}</div>
+            <div className='font-light m-2 text-xs'>{"Reading Time : " + article.reading_time_minutes}</div>
+            <div className='font-light m-2 text-xs'>{article.tag_list.map(
                 tag=>(
                     <div className='tags inline-block m-1 p-2 border-solid border-white border rounded-2xl dark:border-black'>{tag}</div>
                 )
                     
             )}</div>
-            <div className='name text-center font-bold text-3xl  '>{article.title}</div>
-            <div className='content m-4 text-base'>{article.description}</div>
+            <div className='name text-center font-bold lg:text-3xl p-3 '>{article.title}</div>
+            <div className='content m-4 lg:text-base'>{article.description}</div>
             
             
             </div>

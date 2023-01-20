@@ -4,7 +4,7 @@ import GotoTop from '../components/gototop/gototop';
 const Blogs = () =>{
     return(
         <>
-        <div className="heading grade font-bold text-6xl my-32 border-solid border-b w-1/2 mx-auto text-center">I Love to write ✒️</div>
+        <div className="heading grade font-bold lg:text-6xl text-3xl lg:my-32 my-10 border-solid border-b lg:w-1/2 mx-auto text-center">I Love to write ✒️</div>
         <GotoTop/>
         <BlogFront/>
         <style jsx>
