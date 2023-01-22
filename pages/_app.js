@@ -6,7 +6,7 @@ import Footerall from '../components/footer/allpagefoot'
 export default function App({ Component, pageProps }) {  
   return(
 
-    <div className='dark:bg-black dark:text-white bg-goldenyellow  -z-50 p-8'>
+    <div className='dark:bg-black dark:text-white bg-goldenyellow  -z-50 py-8'>
    <Header/>
     <Component {...pageProps} />
     <Footerall/>

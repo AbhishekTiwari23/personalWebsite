@@ -28,14 +28,14 @@ import Cpp from "../../assets/skills/cpp.svg";
 const Skills = () => {
   return (
     <>
-        <div className="my-0 text-center mx-auto p-4 w-11/12">
+        <div className="my-8 text-center mx-auto p-4 lg:w-1/2 w-11/12">
       <div className="text-center">
         <div className="">
-          <span className="grade text-xl m-8 font-extrabold">Skills that I developed over the years</span> 🛠️{" "}
+          <span className="grade text-2xl lg:text-5xl m-12 font-extrabold">Skills that I developed over the years</span> 🛠️{" "}
         </div>
       </div>
       <div className="content text-center">
-      <div className="content-title text-xl font-bold my-4">  <div >Programming Languages </div></div>
+      <div className="content-title text-xl font-bold my-8">  <div >Programming Languages </div></div>
         <div className="box-out ">
 
         <div className="boxes bg-white z-40 border border-solid border-black rounded-xl inline-block m-4 p-2 ">     <Image src={Cpp} alt="" /></div>

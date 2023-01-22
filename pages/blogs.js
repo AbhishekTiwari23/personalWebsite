@@ -4,7 +4,9 @@ import GotoTop from '../components/gototop/gototop';
 const Blogs = () =>{
     return(
         <>
+        
         <div className="heading grade font-bold lg:text-6xl text-3xl lg:my-32 my-10 border-solid border-b lg:w-1/2 mx-auto text-center">I Love to write ✒️</div>
+        <div className="message text-xs text-myblue p-3">These are not my blogs I have just used them to showcase my developer skills</div>
         <GotoTop/>
         <BlogFront/>
         <style jsx>
