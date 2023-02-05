@@ -9,8 +9,6 @@ const Contactme = () =>{
         <div className="discription lg:inline hidden w-1/3 p-8 m-8">
             
            <div className="text-4xl "> Hi <span className='wave '>👋</span>, {" <Geek/> "}</div> <br/>Feel free to talk to me about anything that bothers you. If you need a helping hand, please don't hesitate to contact me. Got a question on the services that I provide? I am just a click away.
-
-I live in the England's time zone, if this help
             </div>
         <ContactmeCont className="folat-right inline-block"/>
         

@@ -9,20 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@next/font": "13.0.7",
-    "@sendgrid/mail": "^7.7.0",
     "axios": "^1.2.1",
     "dotenv": "^16.0.3",
-    "firebase": "^9.15.0",
     "framer-motion": "^8.0.2",
-    "next": "13.0.7",
+    "next": "^13.0.7",
     "nodemailer": "^6.8.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-tsparticles": "^2.6.0",
+    "next-themes": "^0.1.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

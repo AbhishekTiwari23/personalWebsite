@@ -1,11 +1,20 @@
 import React from "react";
+import { useState,useEffect } from "react";
 import Visits from "../../assets/socials/visits.svg";
 import Errors from "../../assets/socials/errors.svg";
-import Abhishek from "../../abhishek/abhishek";
 import Github from "../../assets/socials/githubwhite.svg";
 import Link from "next/link";
 import Image from "next/image";
 const ProjectCard = (props) => {
+  const [profile,setProfile] = useState({});
+    useEffect(() => {
+        fetch('./api/user')
+          .then(res => res.json())
+          .then(data => {
+            setProfile(data);
+          })
+          .catch(error => console.error(error));
+      }, []);   
   return (
     <div className="lg:w-3/4 mx-auto  border-solid border-black border rounded-4xl text-black  bg-goldenyellow text-center">
       <div className="text-center inline">
@@ -16,9 +25,14 @@ const ProjectCard = (props) => {
           <ul className=" hidden lg:inline-block p-1">
             <li className=" inline-block">
               {" "}
-              <Link href={Abhishek.socials.myGithub} target="_blank">
-                <Image src={Github} alt="Github" />
+              {profile.socials && (
+                <>
+              <Link href={profile.socials.myGithub} target="_blank">
+              <Image src={Github} alt="Github" />
               </Link>
+              </>
+              )}
+               
             </li>
           </ul>
       </div>

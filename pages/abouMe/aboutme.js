@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Abhishek from "../../abhishek/abhishek";
 import MyPhoto from "../../assets/mypic/myphoto.jpeg";
 import Image from 'next/image'; 
 import Type from "./typewrite.js";

@@ -1,8 +1,17 @@
 import React from "react";
-import Abhishek from "../../abhishek/abhishek";
+import { useState,useEffect } from "react";
 import Link from 'next/link'
 
 const Footer = () => {
+  const [profile,setProfile] = useState({});
+  useEffect(() => {
+    fetch('./api/user')
+      .then(res => res.json())
+      .then(data => {
+        setProfile(data);
+      })
+      .catch(error => console.error(error));
+  }, []);   
   return (
 
     <div className="footer block">
@@ -14,19 +23,23 @@ const Footer = () => {
         <div className="links">
           <div className="link-content lg:text-2xl font-bold lg:mt-8">Connet with me on socials 🥂</div>
           <ul className="content-socials m-2 lg:m-4">
-           <li className="social-link lg:m-4 inline-block m-2"> <Link href={Abhishek.socials.myGithub} target= "_blank" className="social-link lg:text-4xl text-base">
+          {profile.socials && (
+                    <>
+           <li className="social-link lg:m-4 inline-block m-2"> <Link href={profile.socials.myGithub} target= "_blank" className="social-link lg:text-4xl text-base">
               🐙GH 
             </Link></li>
-            <li className="social-link lg:m-4 inline-block m-2 ">  <Link href={Abhishek.socials.myLinkedin} target= "_blank" className="social-link lg:text-4xl text-base">
+            <li className="social-link lg:m-4 inline-block m-2 ">  <Link href={profile.socials.myLinkedin} target= "_blank" className="social-link lg:text-4xl text-base">
               🐦TW
             </Link></li>
-            <li className="social-link lg:m-4 inline-block m-2 "> <Link href={Abhishek.socials.myTwitter} target= "_blank" className="social-link lg:text-4xl text-base">
+            <li className="social-link lg:m-4 inline-block m-2 "> <Link href={profile.socials.myTwitter} target= "_blank" className="social-link lg:text-4xl text-base">
               📸IN
 
             </Link></li>
             <li className="social-link text-base lg:m-4 inline-block lg:text-4xl m-2"><Link href='/contactme' classname="text-base">
             📬IL
             </Link></li>
+            </>
+          )}
           </ul>
         </div>
         
