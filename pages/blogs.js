@@ -1,7 +1,13 @@
 import React from 'react'
+import { useState } from 'react';
 import BlogFront from '../components/blogs/blogs.front';
 import GotoTop from '../components/gototop/gototop';
 const Blogs = () =>{
+  const [email,setemail] = useState("");
+  const handlemail=(event)=>{
+    setemail(event.target.value);
+  
+  }
     return(
         <>
         
@@ -9,6 +15,12 @@ const Blogs = () =>{
         <div className="message text-xs text-myblue p-3">These are not my blogs I have just used them to showcase my developer skills</div>
         <GotoTop/>
         <BlogFront/>
+        <div className="content">Loved My Blogs, subscribe for upcoming blogs and events</div>
+        <div className="email mx-auto my-6 text-center ">
+        <input type="email" name="email" required className='inline focus:outline-none w-2/6 p-4   rounded-l-lg text-black 'placeholder="Email *" value={email} onChange={handlemail}/>
+        <button type="submit" onClick={(event)=>handleSubmit(event)} className='font-bold bg-myblue  text-white p-4 rounded-r-lg inline' >
+          Submit </button>
+          </div>
         <style jsx>
             {`
             .grade{

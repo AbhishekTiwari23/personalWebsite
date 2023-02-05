@@ -86,20 +86,6 @@ const handleContent=(event)=>{
       }
       
     }
-
-    // if(setSending){
-    //   setStatus(<svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-    // </svg>
-    // + "Processing...")
-    // }
-    // else{
-    //   setSending("Submit")
-    // }
-console.log(first);
-console.log(last);
-console.log(email);
-console.log(mailsubject);
-console.log(content);
   return (
     <div className='border border-solod bg-black dark:bg-white border-myblue py-8  lg:w-2/6 rounded-4xl text-center text-white lg:my-12 my-6 mx-auto'>
     <form  className=" form-wrap" >
