@@ -1,5 +1,4 @@
 import React from "react";
-import Layer5 from "../../assets/socials/layer5dark.svg";
 import OpenCard from "./openSourceCard";
 
 const OpenSource = () => {
