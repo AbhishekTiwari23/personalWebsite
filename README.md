@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CodeFolio ✨
+- Codefolio is a portfolio website template that uses Next.js, Tailwind CSS, GitHub API, Dev.to API, and Nodemailer to create a modern and responsive portfolio website. The website allows you to showcase your skills, projects, blog posts, and contact information.
 
-## Getting Started
+## Features
 
-First, run the development server:
+- Next.js for server-side rendering and client-side routing
+- Tailwind CSS for easy and responsive styling
+- GitHub API to display your latest repositories and contributions
+- Dev.to API to display your latest blog posts
+- Nodemailer for a simple and functional contact form
 
-```bash
-npm run dev
-# or
-yarn dev
+# Getting Started
+
+- Clone the repository
+- Install dependencies using npm install
+- Create a .env.local file and add the following environment variables:
+ ```bash
+GITHUB_USERNAME=your_github_username
+GITHUB_TOKEN=your_github_token
+DEVTO_USERNAME=your_devto_username
+DEVTO_API_KEY=your_devto_api_key
+SMTP_HOST=your_smtp_host
+SMTP_PORT=your_smtp_port
+SMTP_USER=your_smtp_user
+SMTP_PASSWORD=your_smtp_password
+EMAIL_FROM=your_email_from_address
+EMAIL_TO=your_email_to_address
 ```
+- Run the development server using npm run dev
+- Open http://localhost:3000 in your browser to see the website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Contributing
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Contributions are always welcome! If you would like to contribute to the project, please follow these steps:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Fork the repository.
+- Create a new branch for your changes.
+- Make your changes and commit them with a descriptive commit message.
+- Push your changes to your forked repository.
+- Create a pull request and describe your changes in detail.
 
-## Learn More
+## Deployment
+- The website can be deployed using Vercel or any other hosting service that supports Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+## Resource
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [GitHub API](https://docs.github.com/en/rest)
+- [Next.js](https://nextjs.org/docs/getting-started)
+- [TailwindCss](https://tailwindcss.com/docs/installation)
+- [NodeMailer](https://nodemailer.com/about/)
+- [Dev.to API](https://dev.to/nataliedeweerd/how-to-use-the-dev-to-api-5gl3)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+If you have any questions or feedback, please feel free to contact me at tiwari.abhishektiwari23@gmail.com.
